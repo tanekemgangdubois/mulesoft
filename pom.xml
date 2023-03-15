@@ -33,15 +33,15 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>{mule.version}</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<applicationName>${appname}</applicationName>
-						<environment>${env}</environment>
-						<workerType>${vCore}</workerType>
+						<muleVersion>4.4.0</muleVersion>
+						<username>aristide</username>
+						<password>Seigneur2023$</password>
+						<applicationName>joujou</applicationName>
+						<environment>Sandbox</environment>
+						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
-						<businessGroup>${business}</businessGroup>
-						<workers>${workers}</workers>
+						<businessGroup>techlightning</businessGroup>
+						<workers>1</workers>
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
 				</configuration>
