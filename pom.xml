@@ -29,6 +29,23 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>{mule.version}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<applicationName>${appname}</applicationName>
+						<environment>${env}</environment>
+						<workerType>${vCore}</workerType>
+						<objectStoreV2>true</objectStoreV2>
+						<businessGroup>${business}</businessGroup>
+						<workers>${workers}</workers>
+					</cloudHubDeployment>
+					<classifier>mule-application</classifier>
+				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
